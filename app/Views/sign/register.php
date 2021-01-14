@@ -8,29 +8,32 @@
 		<div class="row justify-content-center">
 			<div class="panel panel-primary">
 				<div class="panel-body">
-					<form method="POST" action="/page/login" role="form">
+					<form method="POST" action="/register/simpan" role="form">
 						<div class="form-group">
 						<div class="row mt-4">
 							<h2>Registrasi Akun</h2>
 						</div></div>
+						<?php if (isset($validation)) : ?>
+                        <div class="alert alert-danger"><?= $validation->listErrors() ?></div>
+                   		<?php endif; ?>
 						<div class="form-group">
 							<label class="control-label" for="registerName">Nama Anda</label>
-							<input id="registerName" type="teks" maxlength="50" class="form-control">
+							<input name="nama" id="nama" type="nama" maxlength="50" class="form-control">
 						</div>
 						<div class="form-group">
 							<label class="control-label" for="registerEmail">Email</label>
-							<input id="registerEmail" type="email" maxlength="50" class="form-control">
+							<input name="email" id="email" type="email" maxlength="50" class="form-control">
 						</div>
 						<div class="form-group">
 							<label class="control-label" for="registerPassword">Password</label>
-							<input id="registerPassword" type="password" maxlength="25" class="form-control" placeholder="min 6 karakter" length="40">
+							<input name="password" id="password" type="password" maxlength="25" class="form-control" placeholder="Min 5 karakter" length="40">
 						</div>
 						<div class="form-group">
 							<label class="control-label" for="registerPasswordagain">Konfirmasi Password</label>
-							<input id="registerPasswordagain" type="password" maxlength="25" class="form-control">
+							<input name="confirm_password" id="confirm_password" type="confirm_password" maxlength="25" class="form-control">
 						</div>
 						<div class="form-group">
-							<button id="registerSubmit" type="submit" class="btn btn-info btn-block">Buat Akun</button>
+							<button id="submit" type="submit" class="btn btn-info btn-block">Buat Akun</button>
 						</div>
 						
 						<p>Dengan membuat akun, Anda menyetujui dengan <a href="#">Terms of Use </a> dan <a href="#">Privacy Policy </a> kami.</p>
