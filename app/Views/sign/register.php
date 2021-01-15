@@ -30,7 +30,7 @@
 						</div>
 						<div class="form-group">
 							<label class="control-label" for="registerPasswordagain">Konfirmasi Password</label>
-							<input name="confirm_password" id="confirm_password" type="confirm_password" maxlength="25" class="form-control">
+							<input name="confirm_password" id="confirm_password" type="password" maxlength="25" class="form-control">
 						</div>
 						<div class="form-group">
 							<button id="submit" type="submit" class="btn btn-info btn-block">Buat Akun</button>
