@@ -7,7 +7,7 @@ use App\Models\Kelas;
 
 class Admin extends BaseController
 {
-
+        //Bagian User
     public function index()
     {
         $model = new UserModel;
