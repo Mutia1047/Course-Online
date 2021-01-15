@@ -1,6 +1,8 @@
 <?php
  
 namespace App\Controllers;
+use App\Models\UserModel;
+use App\Models\Kelas;
 
 class Page extends BaseController
 {
@@ -16,12 +18,16 @@ class Page extends BaseController
 	
 	public function pengguna()
 	{
-		return view('Admin/pengguna');
+		$model = new UserModel();
+        $data['getUser'] = $model->getUser();
+        return view('/admin/pengguna', $data);
 	}
 	
 	public function kelas()
 	{
-		return view('Admin/kelas');
+		$model = new Kelas();
+        $data['getKelas'] = $model->getKelas();
+        return view('/admin/kelas', $data);
 	}
 
 	public function tamkelas()
@@ -71,7 +77,9 @@ class Page extends BaseController
 
 	public function home()
 	{
-		return view('user/home');
+		$model = new Kelas();
+        $data['kelas'] = $model->getKelas();
+		return view('user/home', $data);
 	}
 	
     public function keranjang()

@@ -43,6 +43,9 @@ class Login extends BaseController
                     } elseif ($dataUser['role_id'] == '2') {
                         $session->set($data_session);
                         return redirect()->to('/page/admin');
+                    } elseif ($dataUser['role_id'] == '0') {
+                        $session->set($data_session);
+                        return redirect()->to('/user/home');
                     }
                 } else {
                     $session->setFlashdata('msg', 'Password salah');

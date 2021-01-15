@@ -178,72 +178,26 @@
             </ul>
           </div>
         </div>
-
-        <div class="row portfolio-container">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+        <?php foreach ($kelas as $key => $kls) { ?>
+        
+          <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="/template/assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <img src="/img/<?=$kls['gambar']; ?>" class="img-fluid">
               </figure>
-
               <div class="portfolio-info">
-                <h4><a href="det">Membuat Business Plan</a></h4>
-                <p>Bisnis</p>
+              <h4><a href="cs"><?=$kls['nama_kelas']; ?></h4>
+              <p><?=$kls['kategori']; ?></p>
               </div>
             </div>
           </div>
+          
+        <?php } ?>
+          
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="/template/assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              </figure>
+          
 
-              <div class="portfolio-info">
-                <h4><a href="dsn">Desain foto</a></h4>
-                <p>Desain</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="/template/assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="cs">Ngoding Bareng</a></h4>
-                <p>Computer Science</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="/template/assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Desain Website</a></h4>
-                <p>Desain</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="/template/assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Android Mobile</a></h4>
-                <p>Computer Science</p>
-              </div>
-            </div>
-          </div>
+         
         </div>
         
       </div>

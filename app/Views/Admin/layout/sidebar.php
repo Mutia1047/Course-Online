@@ -34,7 +34,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="<?php echo base_url('admin/pengguna'); ?>" class="nav-link">
+            <a href="<?php echo base_url('/page/pengguna'); ?>" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 Data Pengguna

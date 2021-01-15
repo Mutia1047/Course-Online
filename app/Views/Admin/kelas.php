@@ -9,7 +9,7 @@
         <div class="row mb-0">
           <div class="col-sm-6">
             <h1 class="m-0">Data Kelas</h1>
-            <a class="btn btn-primary m-3" href="<?php echo base_url('/admin/tambah kelas'); ?>">Kelas Baru</a>
+            <a class="btn btn-primary m-3" href="<?php echo base_url('/admin/tamkelas'); ?>">Kelas Baru</a>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -47,14 +47,22 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>Bisnis</td>
-                            <td>Membuat Business Plan</td>
-                            <td>Rp 50.000</td>
-                            <td></td>
-                            <td><button type="button" class="btn btn-outline-primary">Edit</button> || <a href=""><button name="delete" class="btn btn-danger btn-sm"><i class="far fa-trash-alt"></i></button></a></td>
-                          </tr>
+                        <?php $no = 1; foreach ($getKelas as $k) { ?>
+                                <tr>
+                                    <th><?= $no; ?></th>
+                                    <td><?= $k['kategori']; ?></td>
+                                    <td><?= $k['nama_kelas']; ?></td>
+                                    <td><?= $k['harga']; ?></td>
+                                    <td><img src="/img/<?= $k['gambar']; ?>" width="130" height="130"></td>
+                                    <td>
+                                    <a href="<?= base_url('admin/tamkelas/'. $k['id_kelas']);?>" class="btn btn-success">
+                                    Edit</a>
+                                        <a href="<?= base_url('admin/hapuskelas/' . $k['id_kelas']); ?>" onclick="javascript:return confirm('Apakah ingin menghapus data user ?')" class="btn btn-danger">
+                                            Hapus</a>
+                                    </td>
+                                </tr>
+                            <?php $no++;
+                            } ?>
                         </tbody>
                       </table>
                     </div>

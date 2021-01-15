@@ -37,7 +37,7 @@ class Register extends BaseController
             $dataUser = [
                 'nama'      => $this->request->getVar('nama'),
                 'email'     => $this->request->getVar('email'),
-                'role_id'     => '1',
+                'role_id'     => '0',
                 'password'  => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
 
             ];
@@ -46,7 +46,7 @@ class Register extends BaseController
 			$session->setFlashdata('success', 'Successful Registration');
             return redirect()->to('/page/login');
         } else {
-            echo view('/page/register');
+            echo view('/sign/register');
         }
     }
 }

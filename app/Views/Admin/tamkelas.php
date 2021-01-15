@@ -6,31 +6,35 @@
 
 <div class="content-wrapper">
 <div class="container">
+
         <div class="row justify-content-md-center">
 
             <div class="col-6">
                 <h1>Kelas Baru</h1>
+                <form action="<?= base_url('admin/addkelas'); ?>" method="post" enctype="multipart/form-data">
+
+                <?= csrf_field(); ?>
                 <hr>
-                <form action="#" method="post">
+                
                     <div class="mb-3">
-                        <label for="InputForName" class="form-label">Kategori</label>
-                        <input type="text" name="barang" class="form-control" id="InputForKategori" value="">
+                        <label for="kategori" class="form-label">Kategori</label>
+                        <input type="text" name="kategori" class="form-control" id="kategori" >
                     </div>
                     <div class="mb-3">
-                        <label for="InputForKelas" class="form-label">Nama Kelas</label>
-                        <input type="integer" name="jumlah" class="form-control" id="InputForKelas" value="">
+                        <label for="nama_kelas" class="form-label">Nama Kelas</label>
+                        <input type="text" name="nama_kelas" class="form-control" id="nama_kelas">
                     </div>
                     <div class="mb-3">
-                        <label for="InputForHarga" class="form-label">Harga</label>
-                        <input type="integer" name="jumlah" class="form-control" id="InputForHarga" value="">
+                        <label for="harga" class="form-label">Harga</label>
+                        <input type="text" name="harga" class="form-control" id="harga">
                     </div>
-                    <form>
+                    
                     <div class="mb-3">
-                        <label for="InputForGambar">Gambar</label>
-                        <input type="file" class="form-control-file" id="InputForGambar">
+                        <label for="gambar">Gambar</label>
+                        <input type="file" class="form-control-file" name="gambar">
                     </div>
-                    </form>
-                    <a button href="/admin/kelas" type="submit" class="btn btn-primary">Tambahkan</a button>
+                    
+                    <button type="submit" class="btn btn-primary">Tambahkan</button>
                 </form>
             </div>
              

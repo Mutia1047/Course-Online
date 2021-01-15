@@ -19,9 +19,13 @@ class Kelas extends Migration
 			],
 			'kategori'      => [
 				'type'           => 'VARCHAR',
-				'constraint'     => 256,
+				'constraint'     => '256',
 			],
 			'harga' => [
+				'type'           => 'VARCHAR',
+				'constraint'     => 100,
+			],
+			'gambar' => [
 				'type'           => 'VARCHAR',
 				'constraint'     => 100,
 			],
