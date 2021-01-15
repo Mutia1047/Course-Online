@@ -97,7 +97,7 @@
           <div class="col-lg-3 col-6">
             <div class="count-box">
               <i class="icofont-document-folder"></i>
-              <span data-toggle="counter-up">40</span>
+              <span data-toggle="counter-up">3</span>
               <p>Jumlah Kursus</p>
             </div>
           </div>
@@ -105,7 +105,7 @@
           <div class="col-lg-3 col-6 mt-5 mt-lg-0">
             <div class="count-box">
               <i class="icofont-live-support"></i>
-              <span data-toggle="counter-up">200</span>
+              <span data-toggle="counter-up">19</span>
               <p>Jumlah Video</p>
             </div>
           </div>
@@ -113,7 +113,7 @@
           <div class="col-lg-3 col-6 mt-5 mt-lg-0">
             <div class="count-box">
               <i class="icofont-users-alt-5"></i>
-              <span data-toggle="counter-up">15</span>
+              <span data-toggle="counter-up">7</span>
               <p>Jumlah Pengajar</p>
             </div>
           </div>
@@ -135,28 +135,16 @@
           <div class="col-md-6">
             <div class="icon-box">
               <a href="#"><i class="icofont-computer"></i></a>
-              <h4><a href="#">Desain</a></h4>
+              <h4><a href="/user/desain">Desain</a></h4>
               <p>Pembelajaran desain berbagai dimensi</p>
             </div>
           </div>
-          <div class="col-md-6 mt-4 mt-lg-0">
-            <div class="icon-box">
-              <a href="#"><i class="icofont-chart-bar-graph"></i></a>
-              <h4><a href="#">Pengembangan Diri</a></h4>
-              <p>Kelas-kelas seputar pengembangan diri manusia baik psikis/rohani</p>
-            </div>
-          </div>
+          
+          
           <div class="col-md-6 mt-4">
             <div class="icon-box">
-              <a href="#"><i class="icofont-share"></i></a>
-              <h4><a href="#">Pemasaran</a></h4>
-              <p>Pembelajaran strategi marketing</p>
-            </div>
-          </div>
-          <div class="col-md-6 mt-4">
-            <div class="icon-box">
-              <a href="#"><i class="icofont-computer"></i></a>
-              <h4><a href="#">Computer Science</a></h4>
+              <a href="/user/computerscience"><i class="icofont-computer"></i></a>
+              <h4><a href="/user/computerscience">Computer Science</a></h4>
               <p>Pembelajaran seputar Computer Science</p>
             </div>
           </div>
@@ -167,13 +155,7 @@
               <p>Seputar pembelajaran bisnis</p>
             </div>
           </div>
-          <div class="col-md-6 mt-4">
-            <div class="icon-box">
-              <a href="#"><i class="icofont-music"></i></a>
-              <h4><a href="#">Musik</a></h4>
-              <p>Pembelajaran tentang teori dan teknik-teknik dalam bermusik di beraneka ragam instrumen</p>
-            </div>
-          </div>
+          
         </div>
 
       </div>
@@ -218,21 +200,8 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Desain 1</a></h4>
+                <h4><a href="dsn">Desain foto</a></h4>
                 <p>Desain</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="/template/assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Bisnis 2</a></h4>
-                <p>Bisnis</p>
               </div>
             </div>
           </div>
@@ -244,7 +213,7 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Computer Science 1</a></h4>
+                <h4><a href="cs">Ngoding Bareng</a></h4>
                 <p>Computer Science</p>
               </div>
             </div>
@@ -257,7 +226,7 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Desain 2</a></h4>
+                <h4><a href="portfolio-details.html">Desain Website</a></h4>
                 <p>Desain</p>
               </div>
             </div>
@@ -270,7 +239,7 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Computer Science 2</a></h4>
+                <h4><a href="portfolio-details.html">Android Mobile</a></h4>
                 <p>Computer Science</p>
               </div>
             </div>

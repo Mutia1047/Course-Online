@@ -12,11 +12,8 @@
           <li class="drop-down"><a href="#services">Kategori Course</a>
             <ul>
               <li><a href="/user/bisnis">Bisnis</a></li>
-              <li><a href="#">Computer Science</a></li>
-              <li><a href="#">Desain</a></li>
-              <li><a href="#">Musik</a></li>
-              <li><a href="#">Pemasaran</a></li>
-              <li><a href="#">Pengembangan Diri</a></li>
+              <li><a href="/user/computerscience">Computer Science</a></li>
+              <li><a href="/user/desain">Desain</a></li>
               </li>
             </ul>
           </li>

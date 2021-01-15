@@ -39,6 +39,16 @@ class Page extends BaseController
 		return view('user/bisnis');
 	}
 
+	public function computerscience()
+	{
+		return view('user/computerscience');
+	}
+
+	public function desain()
+	{
+		return view('user/desain');
+	}
+
 	public function kontak()
 	{
 		return view('user/kontak');
@@ -47,6 +57,16 @@ class Page extends BaseController
 	public function det()
 	{
 		return view('user/det');
+	}
+
+	public function cs()
+	{
+		return view('user/cs');
+	}
+
+	public function dsn()
+	{
+		return view('user/dsn');
 	}
 
 	public function home()
