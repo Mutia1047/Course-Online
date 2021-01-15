@@ -1,0 +1,13 @@
+CRITICAL - 2021-01-14 22:36:21 --> Call to undefined method CodeIgniter\Database\MySQLi\Forge::addForeginKey()
+#0 C:\xampp\htdocs\Course-Online\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(1060): App\Database\Migrations\Pembayaran->up()
+#1 C:\xampp\htdocs\Course-Online\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(223): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#2 C:\xampp\htdocs\Course-Online\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(128): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#3 C:\xampp\htdocs\Course-Online\vendor\codeigniter4\framework\system\CLI\Commands.php(100): CodeIgniter\Commands\Database\Migrate->run(Array)
+#4 C:\xampp\htdocs\Course-Online\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(107): CodeIgniter\CLI\Commands->run('migrate', Array)
+#5 C:\xampp\htdocs\Course-Online\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(85): CodeIgniter\CLI\CommandRunner->index(Array)
+#6 C:\xampp\htdocs\Course-Online\vendor\codeigniter4\framework\system\CodeIgniter.php(914): CodeIgniter\CLI\CommandRunner->_remap('index', 'migrate', 'kelas')
+#7 C:\xampp\htdocs\Course-Online\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#8 C:\xampp\htdocs\Course-Online\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Course-Online\vendor\codeigniter4\framework\system\CLI\Console.php(86): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Course-Online\spark(57): CodeIgniter\CLI\Console->run()
+#11 {main}
