@@ -6,6 +6,7 @@ class User extends Migration
 {
 	public function up()
 	{
+	
 		$this->forge->addField([
 			'id'          => [
 				'type'           => 'INT',
@@ -36,10 +37,9 @@ class User extends Migration
 
 		// Membuat tabel user
 		$this->forge->createTable('user', TRUE);
-	}
 
 	//--------------------------------------------------------------------
-
+		}
 	public function down()
 	{
 		$this->forge->dropTable('user');
