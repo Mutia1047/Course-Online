@@ -9,7 +9,7 @@ class Login extends BaseController
     {
         helper(['form']);
         $data['title'] = "Login";
-        return view('/page/login', $data);
+        return view('Page/login', $data);
     }
 
     public function auth()
@@ -39,21 +39,21 @@ class Login extends BaseController
                 ];
                     if ($dataUser['role_id'] == '1') {
                         $session->set($data_session);
-                        return redirect()->to('/user/home');
+                        return redirect()->to(base_url('/user/home'));
                     } elseif ($dataUser['role_id'] == '2') {
                         $session->set($data_session);
-                        return redirect()->to('/page/admin');
+                        return redirect()->to(base_url('/page/admin'));
                     } elseif ($dataUser['role_id'] == '0') {
                         $session->set($data_session);
-                        return redirect()->to('/user/home');
+                        return redirect()->to(base_url('/user/home'));
                     }
                 } else {
                     $session->setFlashdata('msg', 'Password salah');
-                    return redirect()->to('/page/login');
+                    return redirect()->to(base_url('/page/login'));
                 }
             } else {
                 $session->setFlashdata('msg', 'Email tidak ditemukan');
-                return redirect()->to('/page/login');
+                return redirect()->to(base_url('/page/login'));
             }
         } else {
             $dataUser['validation'] = $this->validator;
@@ -64,7 +64,7 @@ class Login extends BaseController
     public function logout() {
         $session = session();
         $session->destroy();
-        return redirect()->to('/page/login');
+        return redirect()->to(base_url('/page/login'));
     }
 
 }

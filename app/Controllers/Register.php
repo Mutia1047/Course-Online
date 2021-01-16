@@ -44,7 +44,7 @@ class Register extends BaseController
             $model->save($dataUser);
             $session = session();
 			$session->setFlashdata('success', 'Successful Registration');
-            return redirect()->to('/page/login');
+            return redirect()->to(base_url('page/login'));
         } else {
             echo view('/sign/register');
         }

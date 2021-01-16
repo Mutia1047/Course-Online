@@ -1494,3 +1494,13 @@ CRITICAL - 2021-01-15 07:21:00 --> Field `id` not found.
 #14 C:\xampp\htdocs\Course-Online\spark(57): CodeIgniter\CLI\Console->run()
 #15 {main}
 >>>>>>> 19bb9bbae4985fd47c64bd4a46696927d49cf2a0
+CRITICAL - 2021-01-15 18:06:50 --> Invalid file: Page/login.php
+#0 C:\xampp\htdocs\courseonline\Course-Online\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Page/login.php')
+#1 C:\xampp\htdocs\courseonline\Course-Online\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('Page/login', Array, true)
+#2 C:\xampp\htdocs\courseonline\Course-Online\app\Controllers\Login.php(12): view('Page/login', Array)
+#3 C:\xampp\htdocs\courseonline\Course-Online\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Login->index()
+#4 C:\xampp\htdocs\courseonline\Course-Online\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#5 C:\xampp\htdocs\courseonline\Course-Online\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\courseonline\Course-Online\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\courseonline\Course-Online\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#8 {main}

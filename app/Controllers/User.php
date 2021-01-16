@@ -34,6 +34,6 @@ class User extends BaseController
     {
         // update cart
         $this->keranjang->update();
-        return redirect()->to('/page/keranjang');
+        return redirect()->to(base_url('/page/keranjang'));
     }
 }
